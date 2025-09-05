@@ -1,0 +1,31 @@
+{
+  "name": "audio-nft-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Audio NFT marketplace",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:localhost": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --network goerli",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network mainnet",
+    "verify": "npx hardhat verify --network goerli"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "dotenv": "^16.1.4"
+  },
+  "keywords": [
+    "NFT",
+    "audio",
+    "smart-contract",
+    "ethereum",
+    "hardhat"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
