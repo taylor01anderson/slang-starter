@@ -1,6 +1,6 @@
-const express = require('express');
-const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+import express from 'express';
+import jwt from 'jsonwebtoken';
+import User from '../models/User.js';
 const router = express.Router();
 
 // Middleware to verify wallet signature (simplified for demo)
@@ -166,4 +166,4 @@ router.put('/profile', authenticateToken, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

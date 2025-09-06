@@ -1,6 +1,6 @@
-const express = require('express');
-const NFT = require('../models/NFT');
-const User = require('../models/User');
+import express from 'express';
+import NFT from '../models/NFT.js';
+import User from '../models/User.js';
 const router = express.Router();
 
 // GET /api/marketplace/featured - Get featured NFTs
@@ -231,4 +231,4 @@ router.get('/search', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const nftSchema = new mongoose.Schema(
   {
@@ -142,4 +142,4 @@ nftSchema.index({ 'pricing.isForSale': 1 });
 nftSchema.index({ status: 1 });
 nftSchema.index({ 'metadata.genre': 1 });
 
-module.exports = mongoose.model('NFT', nftSchema);
+export default mongoose.model('NFT', nftSchema);

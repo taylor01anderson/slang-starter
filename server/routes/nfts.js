@@ -1,7 +1,7 @@
-const express = require('express');
-const { body, validationResult } = require('express-validator');
-const NFT = require('../models/NFT');
-const User = require('../models/User');
+import express from 'express';
+import { body, validationResult  } from 'express-validator';
+import NFT from '../models/NFT.js';
+import User from '../models/User.js';
 const router = express.Router();
 
 // Auth middleware (simplified)
@@ -338,4 +338,4 @@ router.get('/user/:userId', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
